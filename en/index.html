@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · Chilometrico</title>
+<meta name="description" content="Privacy policy for the Chilometrico app — offline mileage-reimbursement calculator.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --brand:#16624b;
+    --brand-soft:#e3f2ea;
+    --bg:#f6f8f6;
+    --surface:#ffffff;
+    --text:#1a201d;
+    --muted:#5b6560;
+    --border:#e2e8e3;
+    --shadow:0 1px 2px rgba(16,40,30,.04),0 8px 30px rgba(16,40,30,.06);
+    --radius:18px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --brand:#7fd6b4;
+      --brand-soft:#153029;
+      --bg:#0f1512;
+      --surface:#161d19;
+      --text:#e7edea;
+      --muted:#9aa7a1;
+      --border:#26302b;
+      --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 34px rgba(0,0,0,.35);
+    }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.65;
+    font-size:16.5px;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:32px 22px 72px}
+
+  header.masthead{
+    display:flex;align-items:center;gap:14px;
+    padding:22px 0 26px;
+  }
+  .logo{
+    flex:none;width:46px;height:46px;border-radius:13px;
+    background:linear-gradient(135deg,var(--brand),color-mix(in srgb,var(--brand) 70%,#000));
+    display:flex;align-items:center;justify-content:center;
+    color:#fff;font-weight:700;font-size:22px;letter-spacing:-.02em;
+    box-shadow:var(--shadow);
+  }
+  @media (prefers-color-scheme: dark){ .logo{color:#08110d} }
+  .masthead h1{margin:0;font-size:1.02rem;font-weight:600;letter-spacing:-.01em}
+  .masthead .sub{margin:1px 0 0;font-size:.82rem;color:var(--muted)}
+
+  .lang{margin-left:auto;display:flex;gap:2px;background:var(--surface);border:1px solid var(--border);border-radius:999px;padding:3px}
+  .lang a{
+    font-size:.8rem;font-weight:600;color:var(--muted);text-decoration:none;border:0;
+    padding:5px 12px;border-radius:999px;line-height:1;
+  }
+  .lang a.active{background:var(--brand);color:#fff}
+  @media (prefers-color-scheme: dark){ .lang a.active{color:#08110d} }
+
+  .card{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    padding:34px clamp(20px,5vw,44px) 40px;
+  }
+  h2.title{margin:0 0 4px;font-size:clamp(1.7rem,4.5vw,2.15rem);font-weight:700;letter-spacing:-.02em;line-height:1.15}
+  .updated{margin:0 0 26px;font-size:.85rem;color:var(--muted)}
+
+  .tldr{
+    background:var(--brand-soft);
+    border:1px solid color-mix(in srgb,var(--brand) 22%,transparent);
+    border-radius:14px;
+    padding:16px 18px;
+    margin:0 0 30px;
+    font-size:.95rem;
+  }
+  .tldr strong{color:var(--brand)}
+
+  section{margin:0 0 26px}
+  h3{
+    margin:30px 0 8px;font-size:1.14rem;font-weight:600;letter-spacing:-.01em;
+    display:flex;align-items:baseline;gap:10px;
+  }
+  h3 .n{
+    flex:none;font-size:.72rem;font-weight:700;color:var(--brand);
+    font-variant-numeric:tabular-nums;
+    min-width:1.4em;
+  }
+  p{margin:8px 0}
+  a{color:var(--brand);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--brand) 35%,transparent)}
+  a:hover{border-bottom-color:var(--brand)}
+  ul{margin:8px 0;padding-left:1.2em}
+  li{margin:5px 0}
+  .muted{color:var(--muted)}
+
+  .note{
+    font-size:.85rem;color:var(--muted);
+    border-left:3px solid color-mix(in srgb,var(--brand) 45%,transparent);
+    padding:2px 0 2px 14px;margin:14px 0;
+  }
+  .fill{
+    background:color-mix(in srgb,var(--brand) 14%,transparent);
+    border-radius:5px;padding:1px 6px;font-weight:600;
+  }
+
+  footer{margin:34px 2px 0;font-size:.82rem;color:var(--muted);text-align:center}
+  hr{border:0;border-top:1px solid var(--border);margin:30px 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <div class="logo" aria-hidden="true">C</div>
+    <div>
+      <h1>Chilometrico</h1>
+      <p class="sub">Mileage-reimbursement calculator · offline</p>
+    </div>
+    <nav class="lang" aria-label="Language">
+      <a href="../">IT</a>
+      <a href="./" class="active" aria-current="page">EN</a>
+    </nav>
+  </header>
+
+  <main class="card">
+    <h2 class="title">Privacy Policy</h2>
+    <p class="updated">Last updated: 23 August 2026</p>
+
+    <div class="tldr">
+      <strong>In short.</strong> Chilometrico works <strong>offline</strong> and <strong>without an
+      account</strong>. Your vehicles, trips and settings stay <strong>on your device only</strong> —
+      we don't send them anywhere. The only data processing involves <strong>advertising</strong>
+      (Google AdMob), and only according to your consent choices. You can remove ads entirely with a
+      one-time purchase.
+    </div>
+
+    <section>
+      <p>This policy explains how data is handled when you use the <strong>Chilometrico</strong> mobile
+      app (the "App"), in accordance with Regulation (EU) 2016/679 ("GDPR") and applicable law.</p>
+    </section>
+
+    <h3><span class="n">1</span> Data controller</h3>
+    <section>
+      <p>The data controller is <strong>Daniel Neamtu</strong>, the independent developer of the App.
+      For any privacy-related request you can write to:
+      <a href="mailto:play.neamtu@gmail.com">play.neamtu@gmail.com</a>.</p>
+    </section>
+
+    <h3><span class="n">2</span> Data handled by the App (and that never leaves your device)</h3>
+    <section>
+      <p>To do its job, the App stores some information <strong>only locally on your device</strong>:</p>
+      <ul>
+        <li>the <strong>vehicles</strong> you add (make, model, reference ACI rate);</li>
+        <li>the <strong>trips</strong> you save (kilometres, dates, calculated amount);</li>
+        <li>your <strong>settings</strong> (theme, table year, consent choices).</li>
+      </ul>
+      <p>This data is <strong>never transmitted</strong> to the developer or any third party, is not
+      linked to your identity, and is <strong>deleted when you uninstall the App</strong> or clear its
+      data from your system settings. The ACI tables used for the calculation come from public data
+      published in the Italian Official Gazette and are bundled in the App or downloaded from a public
+      archive; that download does not involve collecting personal data.</p>
+    </section>
+
+    <h3><span class="n">3</span> Advertising (Google AdMob)</h3>
+    <section>
+      <p>In the free version, the App shows a banner ad served by <strong>Google AdMob</strong>. To
+      deliver ads, Google and its partners may process certain data, including your device's
+      <strong>advertising identifier</strong>, technical device information, and ad-interaction data.</p>
+      <p>Where required (the EEA, the UK, and certain U.S. states) the App collects your
+      <strong>consent</strong> through Google's User Messaging Platform form before requesting
+      personalised ads. Based on your choice, you are shown <strong>personalised</strong> or
+      <strong>non-personalised</strong> ads. You can <strong>change or withdraw your consent</strong> at
+      any time from within the App, under <em>Settings → Privacy → "Ads consent (GDPR)"</em>.</p>
+      <p>For more on how Google handles data, see the <a href="https://policies.google.com/privacy"
+      target="_blank" rel="noopener">Google Privacy Policy</a> and the page on <a
+      href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">how
+      Google uses data</a> from apps that use its services.</p>
+    </section>
+
+    <h3><span class="n">4</span> In-app purchases</h3>
+    <section>
+      <p>The App offers a <strong>one-time</strong> purchase to remove ads. Payments are handled
+      entirely by <strong>Google Play</strong>: the App <strong>does not receive or store</strong> your
+      card or payment-method details. It only receives confirmation from Google that the purchase was
+      made, so it can disable ads on the device. Payment-data processing is governed by the <a
+      href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy
+      Policy</a>.</p>
+    </section>
+
+    <h3><span class="n">5</span> Legal bases for processing</h3>
+    <section>
+      <ul>
+        <li><strong>Consent</strong> (Art. 6(1)(a) GDPR) — for personalised ads and related purposes,
+        where required.</li>
+        <li><strong>Legitimate interest</strong> (Art. 6(1)(f) GDPR) — for non-personalised ads and
+        basic security/measurement, within permitted limits.</li>
+        <li><strong>Performance of a contract</strong> (Art. 6(1)(b) GDPR) — to handle the remove-ads
+        purchase through Google Play.</li>
+      </ul>
+    </section>
+
+    <h3><span class="n">6</span> Data retention</h3>
+    <section>
+      <p>Locally stored data remains on your device until you delete it or uninstall the App. Data
+      processed by advertising providers is retained according to their respective policies.</p>
+    </section>
+
+    <h3><span class="n">7</span> Transfers outside the EU</h3>
+    <section>
+      <p>The service providers used (in particular Google) may process data outside the European
+      Economic Area. In such cases the transfer relies on the appropriate safeguards provided for by the
+      GDPR (e.g. standard contractual clauses).</p>
+    </section>
+
+    <h3><span class="n">8</span> Children</h3>
+    <section>
+      <p>The App is not directed at children and does not knowingly collect data from children.</p>
+    </section>
+
+    <h3><span class="n">9</span> Your rights</h3>
+    <section>
+      <p>As a data subject you may exercise the rights under Arts. 15–22 GDPR: access, rectification,
+      erasure, restriction, objection, and portability. Because usage data stays on your device, you can
+      exercise most of these directly by clearing the data or uninstalling the App, and by managing your
+      ad consent from the App's settings. You also have the right to lodge a complaint with your
+      supervisory authority — in Italy, the <a href="https://www.garanteprivacy.it" target="_blank"
+      rel="noopener">Garante per la protezione dei dati personali</a>.</p>
+    </section>
+
+    <h3><span class="n">10</span> Changes to this policy</h3>
+    <section>
+      <p>This policy may be updated over time. Changes are published on this page together with the
+      "last updated" date.</p>
+    </section>
+
+    <h3><span class="n">11</span> Contact</h3>
+    <section>
+      <p>For questions about this policy or how your data is handled, write to
+      <a href="mailto:play.neamtu@gmail.com">play.neamtu@gmail.com</a>.</p>
+    </section>
+
+    <hr>
+    <p class="muted" style="font-size:.85rem;margin:0">Chilometrico is an independent app based on public
+    data from the Italian Official Gazette. It is not an official ACI app and does not constitute tax
+    advice.</p>
+  </main>
+
+  <footer>© 2026 Daniel Neamtu · Chilometrico · <a href="../">Italiano</a></footer>
+
+</div>
+</body>
+</html>

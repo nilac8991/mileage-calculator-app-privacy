@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Informativa sulla privacy · Chilometrico</title>
+<meta name="description" content="Informativa sulla privacy dell'app Chilometrico — calcolo del rimborso chilometrico offline.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --brand:#16624b;
+    --brand-soft:#e3f2ea;
+    --bg:#f6f8f6;
+    --surface:#ffffff;
+    --text:#1a201d;
+    --muted:#5b6560;
+    --border:#e2e8e3;
+    --shadow:0 1px 2px rgba(16,40,30,.04),0 8px 30px rgba(16,40,30,.06);
+    --radius:18px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --brand:#7fd6b4;
+      --brand-soft:#153029;
+      --bg:#0f1512;
+      --surface:#161d19;
+      --text:#e7edea;
+      --muted:#9aa7a1;
+      --border:#26302b;
+      --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 34px rgba(0,0,0,.35);
+    }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.65;
+    font-size:16.5px;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:32px 22px 72px}
+
+  header.masthead{
+    display:flex;align-items:center;gap:14px;
+    padding:22px 0 26px;
+  }
+  .logo{
+    flex:none;width:46px;height:46px;border-radius:13px;
+    background:linear-gradient(135deg,var(--brand),color-mix(in srgb,var(--brand) 70%,#000));
+    display:flex;align-items:center;justify-content:center;
+    color:#fff;font-weight:700;font-size:22px;letter-spacing:-.02em;
+    box-shadow:var(--shadow);
+  }
+  @media (prefers-color-scheme: dark){ .logo{color:#08110d} }
+  .masthead h1{margin:0;font-size:1.02rem;font-weight:600;letter-spacing:-.01em}
+  .masthead .sub{margin:1px 0 0;font-size:.82rem;color:var(--muted)}
+
+  .lang{margin-left:auto;display:flex;gap:2px;background:var(--surface);border:1px solid var(--border);border-radius:999px;padding:3px}
+  .lang a{
+    font-size:.8rem;font-weight:600;color:var(--muted);text-decoration:none;border:0;
+    padding:5px 12px;border-radius:999px;line-height:1;
+  }
+  .lang a.active{background:var(--brand);color:#fff}
+  @media (prefers-color-scheme: dark){ .lang a.active{color:#08110d} }
+
+  .card{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    padding:34px clamp(20px,5vw,44px) 40px;
+  }
+  h2.title{margin:0 0 4px;font-size:clamp(1.7rem,4.5vw,2.15rem);font-weight:700;letter-spacing:-.02em;line-height:1.15}
+  .updated{margin:0 0 26px;font-size:.85rem;color:var(--muted)}
+
+  .tldr{
+    background:var(--brand-soft);
+    border:1px solid color-mix(in srgb,var(--brand) 22%,transparent);
+    border-radius:14px;
+    padding:16px 18px;
+    margin:0 0 30px;
+    font-size:.95rem;
+  }
+  .tldr strong{color:var(--brand)}
+
+  section{margin:0 0 26px}
+  h3{
+    margin:30px 0 8px;font-size:1.14rem;font-weight:600;letter-spacing:-.01em;
+    display:flex;align-items:baseline;gap:10px;
+  }
+  h3 .n{
+    flex:none;font-size:.72rem;font-weight:700;color:var(--brand);
+    font-variant-numeric:tabular-nums;
+    min-width:1.4em;
+  }
+  p{margin:8px 0}
+  a{color:var(--brand);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--brand) 35%,transparent)}
+  a:hover{border-bottom-color:var(--brand)}
+  ul{margin:8px 0;padding-left:1.2em}
+  li{margin:5px 0}
+  .muted{color:var(--muted)}
+
+  .note{
+    font-size:.85rem;color:var(--muted);
+    border-left:3px solid color-mix(in srgb,var(--brand) 45%,transparent);
+    padding:2px 0 2px 14px;margin:14px 0;
+  }
+  .fill{
+    background:color-mix(in srgb,var(--brand) 14%,transparent);
+    border-radius:5px;padding:1px 6px;font-weight:600;
+  }
+
+  footer{margin:34px 2px 0;font-size:.82rem;color:var(--muted);text-align:center}
+  hr{border:0;border-top:1px solid var(--border);margin:30px 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <div class="logo" aria-hidden="true">C</div>
+    <div>
+      <h1>Chilometrico</h1>
+      <p class="sub">Calcolo del rimborso chilometrico · offline</p>
+    </div>
+    <nav class="lang" aria-label="Lingua">
+      <a href="./" class="active" aria-current="page">IT</a>
+      <a href="./en/">EN</a>
+    </nav>
+  </header>
+
+  <main class="card">
+    <h2 class="title">Informativa sulla privacy</h2>
+    <p class="updated">Ultimo aggiornamento: 23 agosto 2026</p>
+
+    <div class="tldr">
+      <strong>In breve.</strong> Chilometrico funziona <strong>offline</strong> e <strong>senza
+      account</strong>. I veicoli, i viaggi e le impostazioni restano <strong>solo sul tuo
+      dispositivo</strong>: non li inviamo a nessuno. L'unico trattamento di dati riguarda gli
+      <strong>annunci pubblicitari</strong> (Google AdMob) e avviene solo secondo le tue scelte sul
+      consenso. Puoi rimuovere del tutto gli annunci con un acquisto una tantum.
+    </div>
+
+    <section>
+      <p>La presente informativa descrive come vengono trattati i dati quando utilizzi l'applicazione
+      mobile <strong>Chilometrico</strong> (l'«App»), ai sensi del Regolamento (UE) 2016/679
+      («GDPR») e della normativa italiana applicabile.</p>
+    </section>
+
+    <h3><span class="n">1</span> Titolare del trattamento</h3>
+    <section>
+      <p>Il titolare del trattamento è <strong>Daniel Neamtu</strong>, sviluppatore indipendente
+      dell'App. Per qualsiasi richiesta relativa alla privacy puoi scrivere a:
+      <a href="mailto:play.neamtu@gmail.com">play.neamtu@gmail.com</a>.</p>
+    </section>
+
+    <h3><span class="n">2</span> Dati gestiti dall'App (e che non lasciano il dispositivo)</h3>
+    <section>
+      <p>Per svolgere la sua funzione l'App salva alcune informazioni <strong>esclusivamente in locale
+      sul tuo dispositivo</strong>:</p>
+      <ul>
+        <li>i <strong>veicoli</strong> che aggiungi (marca, modello, tariffa ACI di riferimento);</li>
+        <li>i <strong>viaggi</strong> che salvi (chilometri, date, importo calcolato);</li>
+        <li>le tue <strong>impostazioni</strong> (tema, anno tabella, scelte sul consenso).</li>
+      </ul>
+      <p>Questi dati <strong>non vengono trasmessi</strong> al titolare né a terzi, non sono associati
+      alla tua identità e vengono <strong>eliminati disinstallando l'App</strong> o cancellandone i
+      dati dalle impostazioni del sistema. Le tabelle ACI utilizzate per il calcolo derivano da dati
+      pubblici della Gazzetta Ufficiale e sono incluse nell'App o scaricate da un archivio pubblico;
+      il loro download non comporta la raccolta di dati personali.</p>
+    </section>
+
+    <h3><span class="n">3</span> Annunci pubblicitari (Google AdMob)</h3>
+    <section>
+      <p>Nella versione gratuita, l'App mostra un banner pubblicitario fornito da
+      <strong>Google AdMob</strong>. Per erogare gli annunci, Google e i suoi partner possono trattare
+      alcuni dati, tra cui l'<strong>identificatore pubblicitario</strong> del dispositivo, informazioni
+      tecniche sul dispositivo e dati di interazione con l'annuncio.</p>
+      <p>Nelle aree in cui è richiesto (SEE, Regno Unito e alcuni Stati USA) l'App raccoglie il tuo
+      <strong>consenso</strong> tramite il modulo Google (User Messaging Platform) prima di richiedere
+      annunci personalizzati. In base alla tua scelta vengono mostrati annunci
+      <strong>personalizzati</strong> oppure <strong>non personalizzati</strong>. Puoi
+      <strong>modificare o revocare il consenso</strong> in qualsiasi momento dall'App, in
+      <em>Impostazioni → Privacy → «Consenso annunci (GDPR)»</em>.</p>
+      <p>Per maggiori dettagli su come Google tratta i dati consulta l'<a
+      href="https://policies.google.com/privacy" target="_blank" rel="noopener">Informativa sulla
+      privacy di Google</a> e la pagina <a
+      href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Come
+      Google utilizza i dati</a> quando usi app dei suoi partner.</p>
+    </section>
+
+    <h3><span class="n">4</span> Acquisti in-app</h3>
+    <section>
+      <p>L'App offre un acquisto <strong>una tantum</strong> per rimuovere gli annunci. I pagamenti
+      sono gestiti interamente da <strong>Google Play</strong>: l'App <strong>non riceve né conserva</strong>
+      i dati della tua carta o del tuo metodo di pagamento. Riceve unicamente da Google la conferma che
+      l'acquisto è stato effettuato, così da disattivare gli annunci sul dispositivo. Il trattamento dei
+      dati di pagamento è disciplinato dall'<a href="https://policies.google.com/privacy" target="_blank"
+      rel="noopener">informativa privacy di Google</a>.</p>
+    </section>
+
+    <h3><span class="n">5</span> Base giuridica del trattamento</h3>
+    <section>
+      <ul>
+        <li><strong>Consenso</strong> (art. 6.1.a GDPR) — per gli annunci personalizzati e le finalità
+        collegate, dove richiesto.</li>
+        <li><strong>Legittimo interesse</strong> (art. 6.1.f GDPR) — per gli annunci non personalizzati
+        e la sicurezza/misurazione di base, nei limiti consentiti.</li>
+        <li><strong>Esecuzione di un contratto</strong> (art. 6.1.b GDPR) — per la gestione dell'acquisto
+        di rimozione degli annunci tramite Google Play.</li>
+      </ul>
+    </section>
+
+    <h3><span class="n">6</span> Conservazione dei dati</h3>
+    <section>
+      <p>I dati salvati in locale restano sul dispositivo finché non li elimini o non disinstalli l'App.
+      I dati trattati dai fornitori pubblicitari sono conservati secondo le rispettive informative.</p>
+    </section>
+
+    <h3><span class="n">7</span> Trasferimenti extra-UE</h3>
+    <section>
+      <p>I fornitori di servizi utilizzati (in particolare Google) possono trattare dati anche al di
+      fuori dello Spazio Economico Europeo. In tali casi il trasferimento avviene sulla base di garanzie
+      adeguate previste dal GDPR (ad es. clausole contrattuali standard).</p>
+    </section>
+
+    <h3><span class="n">8</span> Minori</h3>
+    <section>
+      <p>L'App non è destinata a minori e non raccoglie consapevolmente dati di minori.</p>
+    </section>
+
+    <h3><span class="n">9</span> I tuoi diritti</h3>
+    <section>
+      <p>In qualità di interessato puoi esercitare i diritti previsti dagli artt. 15–22 del GDPR:
+      accesso, rettifica, cancellazione, limitazione, opposizione e portabilità. Poiché i dati d'uso
+      restano sul tuo dispositivo, puoi esercitare gran parte di questi diritti direttamente cancellando
+      i dati o disinstallando l'App, e gestendo il consenso agli annunci dalle impostazioni dell'App.
+      Hai inoltre diritto di proporre reclamo al <a href="https://www.garanteprivacy.it" target="_blank"
+      rel="noopener">Garante per la protezione dei dati personali</a>.</p>
+    </section>
+
+    <h3><span class="n">10</span> Modifiche a questa informativa</h3>
+    <section>
+      <p>Questa informativa può essere aggiornata nel tempo. Le modifiche vengono pubblicate in questa
+      pagina con l'indicazione della data di ultimo aggiornamento.</p>
+    </section>
+
+    <h3><span class="n">11</span> Contatti</h3>
+    <section>
+      <p>Per domande su questa informativa o sul trattamento dei tuoi dati scrivi a
+      <a href="mailto:play.neamtu@gmail.com">play.neamtu@gmail.com</a>.</p>
+    </section>
+
+    <hr>
+    <p class="muted" style="font-size:.85rem;margin:0">Chilometrico è un'app indipendente, basata sui dati
+    pubblici della Gazzetta Ufficiale. Non è un'app ufficiale ACI e non costituisce consulenza fiscale.</p>
+  </main>
+
+  <footer>© 2026 Daniel Neamtu · Chilometrico · <a href="./en/">English</a></footer>
+
+</div>
+</body>
+</html>
