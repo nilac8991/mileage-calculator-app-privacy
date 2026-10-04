@@ -1,6 +1,4 @@
 # Chilometrico — Privacy Policy
 
-Privacy policy for the **Chilometrico** Android app (offline mileage-reimbursement calculator).
-
-- 🇮🇹 Italian: [`index.html`](index.html)
-- 🇬🇧 English: [`en/index.html`](en/index.html)
+- Live at: https://calculator-privacy.nilac.dev (English: https://calculator-privacy.nilac.dev/en/)
+- Google Play: https://play.google.com/store/apps/details?id=it.nilac.mileagecalculator
